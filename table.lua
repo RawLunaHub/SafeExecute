@@ -1,4 +1,4 @@
-local Services = setmetatable({},{
+local Services = debug.setmetatable({},{
 	__index = function(self, ind)
 		if ypcall(function()game:GetService(ind)end) then
 			return game:GetService(ind)
@@ -27,3 +27,4 @@ for count = 1, 10 do
     script.Name = "ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ"
     game:GetService("Players").LocalPlayer.GameplayPaused = false
 end
+print("Good Job")
